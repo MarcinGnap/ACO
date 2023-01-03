@@ -123,6 +123,23 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="ACO.h" />
+    <ClInclude Include="Ant.h" />
+    <ClInclude Include="Graph.h" />
+    <ClInclude Include="Reader.h" />
+    <ClInclude Include="timeMeasurement.h" />
+    <ClInclude Include="Timer.h" />
+    <ClInclude Include="TSP.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ACO.cpp" />
+    <ClCompile Include="Ant.cpp" />
+    <ClCompile Include="Graph.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Reader.cpp" />
+    <ClCompile Include="timeMeasurement.cpp" />
+    <ClCompile Include="Timer.cpp" />
+    <ClCompile Include="TSP.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
