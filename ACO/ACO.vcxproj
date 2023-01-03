@@ -141,6 +141,30 @@
     <ClCompile Include="Timer.cpp" />
     <ClCompile Include="TSP.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="config.ini" />
+    <None Include="results.csv" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Data\bays29.tsp.txt" />
+    <Text Include="Data\burma14.tsp.txt" />
+    <Text Include="Data\ch150.tsp.txt" />
+    <Text Include="Data\ft53.atsp.txt" />
+    <Text Include="Data\ftv170.atsp.txt" />
+    <Text Include="Data\ftv33.atsp.txt" />
+    <Text Include="Data\ftv44.atsp.txt" />
+    <Text Include="Data\ftv70.atsp.txt" />
+    <Text Include="Data\gr17.tsp.txt" />
+    <Text Include="Data\gr21.tsp.txt" />
+    <Text Include="Data\gr229.tsp.txt" />
+    <Text Include="Data\gr24.tsp.txt" />
+    <Text Include="Data\gr666.tsp.txt" />
+    <Text Include="Data\pcb442.tsp.txt" />
+    <Text Include="Data\pr1002.tsp.txt" />
+    <Text Include="Data\pr2392.tsp.txt" />
+    <Text Include="Data\rbg323.atsp.txt" />
+    <Text Include="Data\rbg443.atsp.txt" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
