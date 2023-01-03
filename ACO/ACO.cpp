@@ -8,7 +8,7 @@ ACO::ACO()
 	alpha = 1.0;
 	beta = 5.0;
 	qval = 100;
-	maxTours = 20;
+	maxTours = 100;
 	antsPopulation = 50;
 	evaporationRate = 0.5;
 	best = INT_MAX;
@@ -153,17 +153,35 @@ int ACO::simulateAnts()
 
 			ants[k]->curCity = ants[k]->nextCity;
 			moving++;
+			// totaj update pheromones?
 
 		}
 	}
-
 	return moving;
+}
+
+void ACO::updatePheromones(int from, int to) {
+
 }
 
 // updating trails
 void ACO::updateTrails()
 {
 	int from, to;
+
+	for (from = 0; from < gm->getNumbOfVerts(); from++)
+	{
+		for (to = 0; to < gm->getNumbOfVerts(); to++)
+		{
+			pheromones[from][to] *= evaporationRate;
+
+			if (pheromones[from][to] < 0.0)
+			{
+				pheromones[from][to] = 1.0 / gm->getNumbOfVerts();
+			}
+		}
+	}
+
 	/*
 	// pheromones evaporation
 	for (from = 0; from < gm->getNumbOfVerts(); from++)
@@ -182,14 +200,7 @@ void ACO::updateTrails()
 		}
 	}*/
 
-	for (from = 0; from < gm->getNumbOfVerts(); from++)
-	{
-		for (to = 0; to < gm->getNumbOfVerts(); to++)
-		{
-			pheromones[from][to] *= evaporationRate;
-		}
-	}
-	// add new pheromones to the trails CAS
+	// add new pheromones to the trails
 	for (int ant = 0; ant < antsPopulation; ant++)
 	{
 		for (int i = 0; i < gm->getNumbOfVerts(); i++)
@@ -205,17 +216,18 @@ void ACO::updateTrails()
 				to = ants[ant]->path[0];
 			}
 
+			// CAS
 			pheromones[from][to] += qval / ants[ant]->tourLength;
 			pheromones[to][from] = pheromones[from][to];
 
 		}
 	}
 
-
 }
 
 void ACO::menu()
 {
+	antsPopulation = gm->getNumbOfVerts();
 	int curTime = 0;
 
 	std::cout << "S-ACO:";
@@ -244,3 +256,25 @@ void ACO::menu()
 void ACO::setNumberOfAnts(int antsPopulation) {
 	ACO::antsPopulation = antsPopulation;
 }
+
+/* DAS, u góry jest CAS, QAS to przez aktualn¹ wagê krawêdzi
+for (int ant = 0; ant < antsPopulation; ant++)
+{
+	for (int i = 0; i < gm->getNumbOfVerts(); i++)
+	{
+		if (i < gm->getNumbOfVerts() - 1)
+		{
+			from = ants[ant]->path[i];
+			to = ants[ant]->path[i + 1];
+		}
+		else
+		{
+			from = ants[ant]->path[i];
+			to = ants[ant]->path[0];
+		}
+
+		pheromones[from][to] += qval;
+		pheromones[to][from] = pheromones[from][to];
+
+	}
+}*/
