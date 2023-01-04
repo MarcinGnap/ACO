@@ -20,8 +20,9 @@ class ACO : public TSP {
 	double antProduct(int from, int to);
 	int selectNextCity(int ant);
 	int simulateAnts();
-	void updateTrails();
-	void updatePheromones(int from, int to);
+	void updateTrails(int fromAnt, int toAnt);
+	void updateAntTrail(int fromAnt, int toAnt, int curAnt);
+	void updatePheromones();
 public:
 	ACO();
 

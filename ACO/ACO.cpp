@@ -145,29 +145,22 @@ int ACO::simulateAnts()
 			ants[k]->path[ants[k]->pathIndex++] = ants[k]->nextCity;
 
 			ants[k]->tourLength += gm->getValueOfEdge(ants[k]->curCity, ants[k]->nextCity);
-
+			
 			//handle last case->last city to first
 			if (ants[k]->pathIndex == gm->getNumbOfVerts())
 			{
 				ants[k]->tourLength += gm->getValueOfEdge(ants[k]->path[gm->getNumbOfVerts() - 1], ants[k]->path[0]);
 			}
-
+			updateAntTrail(ants[k]->curCity, ants[k]->nextCity, k);
 			ants[k]->curCity = ants[k]->nextCity;
 			moving++;
-			// totaj update pheromones?
-
 		}
 	}
+	updatePheromones();
 	return moving;
 }
 
-void ACO::updatePheromones(int from, int to) {
-
-}
-
-// updating trails
-void ACO::updateTrails()
-{
+void ACO::updatePheromones() {
 	int from, to;
 
 	for (from = 0; from < gm->getNumbOfVerts(); from++)
@@ -182,7 +175,28 @@ void ACO::updateTrails()
 			}
 		}
 	}
+}
 
+
+void ACO::updateAntTrail(int fromAnt, int toAnt, int curAnt)
+{
+	// CAS
+	//pheromones[fromAnt][toAnt] += qval / ants[curAnt]->tourLength;
+	//pheromones[toAnt][fromAnt] = pheromones[fromAnt][toAnt];
+
+	// DAS
+	pheromones[fromAnt][toAnt] += qval;
+	pheromones[toAnt][fromAnt] = pheromones[fromAnt][toAnt];
+
+	// QAS
+	//pheromones[fromAnt][toAnt] += qval / gm->getValueOfEdge(ants[curAnt]->curCity, ants[curAnt]->nextCity);
+	//pheromones[toAnt][fromAnt] = pheromones[fromAnt][toAnt];
+}
+
+
+// updating trails
+void ACO::updateTrails(int fromAnt, int toAnt)
+{
 	/*
 	// pheromones evaporation
 	for (from = 0; from < gm->getNumbOfVerts(); from++)
@@ -208,18 +222,18 @@ void ACO::updateTrails()
 		{
 			if (i < gm->getNumbOfVerts() - 1)
 			{
-				from = ants[ant]->path[i];
-				to = ants[ant]->path[i + 1];
+				fromAnt = ants[ant]->path[i];
+				toAnt = ants[ant]->path[i + 1];
 			}
 			else
 			{
-				from = ants[ant]->path[i];
-				to = ants[ant]->path[0];
+				fromAnt = ants[ant]->path[i];
+				toAnt = ants[ant]->path[0];
 			}
 
 			// CAS
-			pheromones[from][to] += qval / ants[ant]->tourLength;
-			pheromones[to][from] = pheromones[from][to];
+			pheromones[fromAnt][toAnt] += qval / ants[ant]->tourLength;
+			pheromones[toAnt][fromAnt] = pheromones[fromAnt][toAnt];
 
 		}
 	}
@@ -246,8 +260,6 @@ long long ACO::menu()
 	{
 		if (simulateAnts() == 0)
 		{
-			updateTrails();
-
 			if (curTime != maxTours * gm->getNumbOfVerts())
 				restartAnts();
 
