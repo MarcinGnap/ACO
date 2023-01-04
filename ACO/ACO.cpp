@@ -1,5 +1,6 @@
 #include "ACO.h"
 #include "Timer.h"
+#include "timeMeasurement.h"
 #include <assert.h>
 
 // runtime Structures and global variables
@@ -225,15 +226,19 @@ void ACO::updateTrails()
 
 }
 
-void ACO::menu()
+long long ACO::menu()
 {
 	antsPopulation = gm->getNumbOfVerts();
 	int curTime = 0;
 
-	std::cout << "S-ACO:";
-	std::cout << "MaxTime=" << maxTours * gm->getNumbOfVerts();
+	timeMeasurement* tM = new timeMeasurement();
+
+	//std::cout << "S-ACO:";
+	//std::cout << "MaxTime=" << maxTours * gm->getNumbOfVerts();
 
 	srand(static_cast<unsigned int>(time(nullptr)));
+
+	auto o1 = chrono::high_resolution_clock::now();
 
 	init();
 
@@ -246,11 +251,18 @@ void ACO::menu()
 			if (curTime != maxTours * gm->getNumbOfVerts())
 				restartAnts();
 
-			std::cout << "\n Time is " << curTime << "(" << best << ")";
+			//std::cout << "\n Time is " << curTime << "(" << best << ")";
 		}
 	}
+	auto o2 = chrono::high_resolution_clock::now();
 
-	std::cout << "\nBest tour = " << best << std::endl << std::endl << std::endl;
+	//std::cout << "\nBest tour = " << best << std::endl << std::endl << std::endl;
+	return tM->tMTest(o1, o2);
+}
+
+double ACO::getBest()
+{
+	return best;
 }
 
 void ACO::setNumberOfAnts(int antsPopulation) {

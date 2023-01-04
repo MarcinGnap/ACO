@@ -27,6 +27,6 @@ public:
 
 	void setNumberOfAnts(int antsPopulation);
 
-	void menu() override;
-	int getBest() const;
+	long long menu() override;
+	double getBest() override;
 };

@@ -23,7 +23,8 @@ public:
 
 	bool searchInFile(std::ifstream &fin, std::string toFind);
 	bool load(Graph* myGraph);
-	virtual void menu() = 0;
+	virtual long long menu() = 0;
+	virtual double getBest() = 0;
 
 protected:
 	Graph* gm;
