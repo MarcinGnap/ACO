@@ -19,7 +19,7 @@ bool Reader::OpenIni() {
 	std::ifstream ifFileini("config.ini", std::ios::in);
 	if (ifFileini.good())
 	{
-		for (int z = 0; z < 18; z++) {
+		for (int z = 0; z < 1; z++) {
 
 			ifFileini >> fileNames[z];
 			ifFileini >> iRNumber[z];
