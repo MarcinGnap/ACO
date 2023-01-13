@@ -59,8 +59,8 @@ int main() {
 		vector<int> path;
 		int cost;
 
-		vector<double> alfa = { 0.1, 0.5, 1, 2, 3, 5 };
-		vector<double> beta = { 1, 2, 3, 4, 5, 6 };
+		vector<double> alfa = { 1 };
+		vector<double> beta = { 5 };
 
 		path.resize(myGraph->getNumbOfVerts() + 1);
 

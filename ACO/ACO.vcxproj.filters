@@ -105,9 +105,6 @@
     <Text Include="Data\gr24.tsp.txt">
       <Filter>Pliki zasobów</Filter>
     </Text>
-    <Text Include="Data\gr229.tsp.txt">
-      <Filter>Pliki zasobów</Filter>
-    </Text>
     <Text Include="Data\gr666.tsp.txt">
       <Filter>Pliki zasobów</Filter>
     </Text>
@@ -124,6 +121,9 @@
       <Filter>Pliki zasobów</Filter>
     </Text>
     <Text Include="Data\rbg443.atsp.txt">
+      <Filter>Pliki zasobów</Filter>
+    </Text>
+    <Text Include="Data\gr202.tsp.txt">
       <Filter>Pliki zasobów</Filter>
     </Text>
   </ItemGroup>
