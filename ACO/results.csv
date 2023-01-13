@@ -1,18 +1,7 @@
 Nazwa pliku: Data/ftv170.atsp.txt
 Powtórzenia algorytmu: 10
 Optymalny koszt: 2755
-Otrzymany koszt: ;Wspó³czynnik b³êdu[j]: ;Wspó³czynnik b³êdu[%]: ;Czas wykonywania[ms] ;3487 ; 732 ; 26.5699 ; 35783.1 ; 
-3461 ; 706 ; 25.6261 ; 33956.4 ; 
-3373 ; 618 ; 22.4319 ; 34594 ; 
-3444 ; 689 ; 25.0091 ; 34514.6 ; 
-3479 ; 724 ; 26.2795 ; 32977.8 ; 
-3164 ; 409 ; 14.8457 ; 34326.2 ; 
-3437 ; 682 ; 24.755 ; 34143.7 ; 
-3286 ; 531 ; 19.274 ; 33247.1 ; 
-3418 ; 663 ; 24.0653 ; 34515 ; 
-3420 ; 665 ; 24.1379 ; 32860.6 ; 
-Œredni czas wykonywania algorytmu [ms]:  ; 30805.8
-Œredni wspó³czynnik b³êdu [j]:  ; 641.9
-Œredni wspó³czynnik b³êdu [%]:  ; 23.2995
-Optymalny koszt:  ; 2755
-
+Otrzymany koszt: ;Wspó³czynnik b³êdu[j]: ;Wspó³czynnik b³êdu[%]: ;Czas wykonywania[ms] ;Rozwi¹zania dla alpha = 0.1
+Rozwi¹zania dla beta = 1
+14350 ; 11595 ; 420.871 ; 48078.7 ; 
+14117 ; 11362 ; 412.414 ; 47551.7 ; 

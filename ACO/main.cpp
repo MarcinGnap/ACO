@@ -72,8 +72,8 @@ int main() {
 			cout << "\nDoing for alpha = " << alfa[al] << " ... \n \n";
 			outputFile << "Rozwiązania dla alpha = " << alfa[al] << endl;
 			for (int be = 0; be < beta.size(); be++) {
-				cout << "\nDoing for alpha = " << beta[be] << " ... \n \n";
-				outputFile << "Rozwiązania dla alpha = " << beta[be] << endl;
+				cout << "\nDoing for beta = " << beta[be] << " ... \n \n";
+				outputFile << "Rozwiązania dla beta = " << beta[be] << endl;
 
 				llAvgTime = 0;
 				llAvgTimefloat = 0;
@@ -91,7 +91,7 @@ int main() {
 					TSP* test = new ACO();
 					test->load(myGraph);
 
-					exeTime = test->menu();
+					exeTime = test->menu(alfa[al], beta[be]);
 
 					error = abs(reader.iOCost[pliki] - test->getBest());
 					errorRate = (error / reader.iOCost[pliki]) * 100;

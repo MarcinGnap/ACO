@@ -220,9 +220,11 @@ void ACO::updateTrails(int fromAnt, int toAnt)
 	}
 }
 
-long long ACO::menu()
+long long ACO::menu(double alfa, double betha)
 {
 	antsPopulation = gm->getNumbOfVerts();
+	alpha = alfa;
+	beta = betha;
 	int curTime = 0;
 
 	timeMeasurement* tM = new timeMeasurement();
