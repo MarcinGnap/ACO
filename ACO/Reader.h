@@ -5,9 +5,9 @@
 class Reader
 {
 public:
-	int iRNumber[1];
-	int iOCost[1];
-	std::string fileNames[1];
+	int iRNumber[18];
+	int iOCost[18];
+	std::string fileNames[18];
 	std::string sFilename;
 
 	int iNOfVertices;
