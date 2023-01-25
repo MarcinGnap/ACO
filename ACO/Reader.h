@@ -5,10 +5,12 @@
 class Reader
 {
 public:
-	int iRNumber[18];
-	int iOCost[18];
-	std::string fileNames[18];
+	int iRNumber[1];
+	int iOCost[1];
+	std::string fileNames[1];
 	std::string sFilename;
+	float alpha, beta, qval;
+	std::string aco;
 
 	int iNOfVertices;
 	int **iVertices;

@@ -153,9 +153,6 @@ int ACO::simulateAnts()
 			}
 			updateAntTrail(k);
 
-			//pheromones[ants[k]->curCity][ants[k]->nextCity] += qval;
-			//pheromones[ants[k]->nextCity][ants[k]->curCity] = pheromones[ants[k]->curCity][ants[k]->nextCity];
-
 			ants[k]->curCity = ants[k]->nextCity;
 			moving++;
 		}
@@ -184,22 +181,22 @@ void ACO::updatePheromones() {
 
 void ACO::updateAntTrail(int curAnt)
 {
-	// CAS
-	//pheromones[fromAnt][toAnt] += qval / ants[curAnt]->tourLength;
-	//pheromones[toAnt][fromAnt] = pheromones[fromAnt][toAnt];
-
-	// DAS
-	pheromones[ants[curAnt]->curCity][ants[curAnt]->nextCity] += qval;
-	pheromones[ants[curAnt]->nextCity][ants[curAnt]->curCity] = pheromones[ants[curAnt]->curCity][ants[curAnt]->nextCity];
-
-	// QAS
-	//pheromones[fromAnt][toAnt] += qval / gm->getValueOfEdge(ants[curAnt]->curCity, ants[curAnt]->nextCity);
-	//pheromones[toAnt][fromAnt] = pheromones[fromAnt][toAnt];
+	if (das == 1)
+	{
+		// DAS
+		pheromones[ants[curAnt]->curCity][ants[curAnt]->nextCity] += qval;
+		pheromones[ants[curAnt]->nextCity][ants[curAnt]->curCity] = pheromones[ants[curAnt]->curCity][ants[curAnt]->nextCity];
+	}
+	else if (das == 0) {
+		// QAS
+		pheromones[ants[curAnt]->curCity][ants[curAnt]->nextCity] += qval / gm->getValueOfEdge(ants[curAnt]->curCity, ants[curAnt]->nextCity);
+		pheromones[ants[curAnt]->nextCity][ants[curAnt]->curCity] = pheromones[ants[curAnt]->curCity][ants[curAnt]->nextCity];
+	}
 }
 
 
 // updating trails
-void ACO::updateTrails(int fromAnt, int toAnt)
+void ACO::updateTrails()
 {
 	int from, to;
 	// pheromones evaporation
@@ -220,17 +217,27 @@ void ACO::updateTrails(int fromAnt, int toAnt)
 	}
 }
 
-long long ACO::menu(double alfa, double betha)
+long long ACO::menu(double alfa, double betha, float q, std::string acos)
 {
 	antsPopulation = gm->getNumbOfVerts();
 	alpha = alfa;
 	beta = betha;
+	qval = q;
+	if (acos == "DAS") {
+		das = 1;
+	}
+	else if (acos == "QAS"){
+		das = 0;
+	}
+	else{
+		das = -1;
+	}
 	int curTime = 0;
 
 	timeMeasurement* tM = new timeMeasurement();
 
-	std::cout << "S-ACO:";
-	std::cout << "MaxTime=" << maxTours * gm->getNumbOfVerts();
+	std::cout << "ACO:";
+	std::cout << "MaxTours=" << maxTours * gm->getNumbOfVerts();
 
 	srand(static_cast<unsigned int>(time(nullptr)));
 
@@ -242,16 +249,16 @@ long long ACO::menu(double alfa, double betha)
 	{
 		if (simulateAnts() == 0)
 		{
-			updateTrails(0, 0);
+			updateTrails();
 			if (curTime != maxTours * gm->getNumbOfVerts())
 				restartAnts();
 
-			std::cout << "\n Time is " << curTime << "(" << best << ")";
+			std::cout << "\n Tours " << curTime << "(" << best << ")";
 		}
 	}
 	auto o2 = chrono::high_resolution_clock::now();
 
-	std::cout << "\nBest tour = " << best << std::endl << std::endl << std::endl;
+	std::cout << "\nBest path weight = " << best << std::endl << std::endl << std::endl;
 	return tM->tMTest(o1, o2);
 }
 
@@ -263,25 +270,3 @@ double ACO::getBest()
 void ACO::setNumberOfAnts(int antsPopulation) {
 	ACO::antsPopulation = antsPopulation;
 }
-
-/* DAS, u góry jest CAS, QAS to przez aktualn¹ wagê krawêdzi
-for (int ant = 0; ant < antsPopulation; ant++)
-{
-	for (int i = 0; i < gm->getNumbOfVerts(); i++)
-	{
-		if (i < gm->getNumbOfVerts() - 1)
-		{
-			from = ants[ant]->path[i];
-			to = ants[ant]->path[i + 1];
-		}
-		else
-		{
-			from = ants[ant]->path[i];
-			to = ants[ant]->path[0];
-		}
-
-		pheromones[from][to] += qval;
-		pheromones[to][from] = pheromones[from][to];
-
-	}
-}*/

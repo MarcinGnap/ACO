@@ -1,0 +1,245 @@
+Nazwa pliku: Data/burma14.tsp.txt
+Powtórzenia algorytmu: 10
+Optymalny koszt: 3323
+Otrzymany koszt: ;Wspó³czynnik b³êdu[j]: ;Wspó³czynnik b³êdu[%]: ;Czas wykonywania[ms] ;Rozwi¹zania dla alpha = 1
+Rozwi¹zania dla beta = 5
+3371 ; 48 ; 1.44448 ; 112.214 ; 
+3371 ; 48 ; 1.44448 ; 79.6635 ; 
+3371 ; 48 ; 1.44448 ; 85.5487 ; 
+3371 ; 48 ; 1.44448 ; 80.7814 ; 
+3371 ; 48 ; 1.44448 ; 68.9419 ; 
+3371 ; 48 ; 1.44448 ; 71.4742 ; 
+3371 ; 48 ; 1.44448 ; 75.0556 ; 
+3371 ; 48 ; 1.44448 ; 73.329 ; 
+3371 ; 48 ; 1.44448 ; 87.7655 ; 
+3371 ; 48 ; 1.44448 ; 80.8139 ; 
+Œredni czas wykonywania algorytmu [ms]:  ; 73.4774
+Œredni wspó³czynnik b³êdu [j]:  ; 48
+Œredni wspó³czynnik b³êdu [%]:  ; 1.44448
+Optymalny koszt:  ; 3323
+
+Nazwa pliku: Data/gr17.tsp.txt
+Powtórzenia algorytmu: 10
+Optymalny koszt: 2085
+Otrzymany koszt: ;Wspó³czynnik b³êdu[j]: ;Wspó³czynnik b³êdu[%]: ;Czas wykonywania[ms] ;Rozwi¹zania dla alpha = 1
+Rozwi¹zania dla beta = 5
+2085 ; 0 ; 0 ; 105.557 ; 
+2085 ; 0 ; 0 ; 115.827 ; 
+2085 ; 0 ; 0 ; 94.9637 ; 
+2085 ; 0 ; 0 ; 92.5526 ; 
+2085 ; 0 ; 0 ; 92.7654 ; 
+2149 ; 64 ; 3.06954 ; 92.1082 ; 
+2149 ; 64 ; 3.06954 ; 90.9591 ; 
+2149 ; 64 ; 3.06954 ; 93.1684 ; 
+2149 ; 64 ; 3.06954 ; 89.8349 ; 
+2149 ; 64 ; 3.06954 ; 90.3843 ; 
+Œredni czas wykonywania algorytmu [ms]:  ; 86.7736
+Œredni wspó³czynnik b³êdu [j]:  ; 32
+Œredni wspó³czynnik b³êdu [%]:  ; 1.53477
+Optymalny koszt:  ; 2085
+
+Nazwa pliku: Data/gr21.tsp.txt
+Powtórzenia algorytmu: 10
+Optymalny koszt: 2707
+Otrzymany koszt: ;Wspó³czynnik b³êdu[j]: ;Wspó³czynnik b³êdu[%]: ;Czas wykonywania[ms] ;Rozwi¹zania dla alpha = 1
+Rozwi¹zania dla beta = 5
+2758 ; 51 ; 1.884 ; 133.261 ; 
+2758 ; 51 ; 1.884 ; 134.712 ; 
+2758 ; 51 ; 1.884 ; 133.328 ; 
+2758 ; 51 ; 1.884 ; 133.506 ; 
+2833 ; 126 ; 4.6546 ; 128.566 ; 
+2833 ; 126 ; 4.6546 ; 149.281 ; 
+2833 ; 126 ; 4.6546 ; 151.53 ; 
+2833 ; 126 ; 4.6546 ; 142.273 ; 
+2833 ; 126 ; 4.6546 ; 137.326 ; 
+2833 ; 126 ; 4.6546 ; 129.19 ; 
+Œredni czas wykonywania algorytmu [ms]:  ; 124.378
+Œredni wspó³czynnik b³êdu [j]:  ; 96
+Œredni wspó³czynnik b³êdu [%]:  ; 3.54636
+Optymalny koszt:  ; 2707
+
+Nazwa pliku: Data/gr24.tsp.txt
+Powtórzenia algorytmu: 10
+Optymalny koszt: 1272
+Otrzymany koszt: ;Wspó³czynnik b³êdu[j]: ;Wspó³czynnik b³êdu[%]: ;Czas wykonywania[ms] ;Rozwi¹zania dla alpha = 1
+Rozwi¹zania dla beta = 5
+1294 ; 22 ; 1.72956 ; 182.016 ; 
+1278 ; 6 ; 0.471698 ; 186.143 ; 
+1278 ; 6 ; 0.471698 ; 186.954 ; 
+1278 ; 6 ; 0.471698 ; 185.976 ; 
+1278 ; 6 ; 0.471698 ; 182.317 ; 
+1278 ; 6 ; 0.471698 ; 186.949 ; 
+1302 ; 30 ; 2.35849 ; 182.798 ; 
+1302 ; 30 ; 2.35849 ; 187.061 ; 
+1302 ; 30 ; 2.35849 ; 196.265 ; 
+1302 ; 30 ; 2.35849 ; 185.776 ; 
+Œredni czas wykonywania algorytmu [ms]:  ; 167.648
+Œredni wspó³czynnik b³êdu [j]:  ; 17.2
+Œredni wspó³czynnik b³êdu [%]:  ; 1.3522
+Optymalny koszt:  ; 1272
+
+Nazwa pliku: Data/bays29.tsp.txt
+Powtórzenia algorytmu: 10
+Optymalny koszt: 2020
+Otrzymany koszt: ;Wspó³czynnik b³êdu[j]: ;Wspó³czynnik b³êdu[%]: ;Czas wykonywania[ms] ;Rozwi¹zania dla alpha = 1
+Rozwi¹zania dla beta = 5
+2116 ; 96 ; 4.75248 ; 303.851 ; 
+2167 ; 147 ; 7.27723 ; 296.467 ; 
+2167 ; 147 ; 7.27723 ; 306.872 ; 
+2167 ; 147 ; 7.27723 ; 317.784 ; 
+2133 ; 113 ; 5.59406 ; 308.497 ; 
+2133 ; 113 ; 5.59406 ; 321.885 ; 
+2133 ; 113 ; 5.59406 ; 312.563 ; 
+2124 ; 104 ; 5.14851 ; 307.236 ; 
+2124 ; 104 ; 5.14851 ; 312.894 ; 
+2124 ; 104 ; 5.14851 ; 304.439 ; 
+Œredni czas wykonywania algorytmu [ms]:  ; 278.805
+Œredni wspó³czynnik b³êdu [j]:  ; 118.8
+Œredni wspó³czynnik b³êdu [%]:  ; 5.88119
+Optymalny koszt:  ; 2020
+
+Nazwa pliku: Data/ftv33.atsp.txt
+Powtórzenia algorytmu: 10
+Optymalny koszt: 1286
+Otrzymany koszt: ;Wspó³czynnik b³êdu[j]: ;Wspó³czynnik b³êdu[%]: ;Czas wykonywania[ms] ;Rozwi¹zania dla alpha = 1
+Rozwi¹zania dla beta = 5
+1460 ; 174 ; 13.5303 ; 446.58 ; 
+1411 ; 125 ; 9.72006 ; 452.466 ; 
+1411 ; 125 ; 9.72006 ; 463.989 ; 
+1404 ; 118 ; 9.17574 ; 456.317 ; 
+1404 ; 118 ; 9.17574 ; 452.976 ; 
+1402 ; 116 ; 9.02022 ; 457.307 ; 
+1402 ; 116 ; 9.02022 ; 451.633 ; 
+1453 ; 167 ; 12.986 ; 463.554 ; 
+1453 ; 167 ; 12.986 ; 456.076 ; 
+1445 ; 159 ; 12.3639 ; 456.344 ; 
+Œredni czas wykonywania algorytmu [ms]:  ; 410.09
+Œredni wspó³czynnik b³êdu [j]:  ; 138.5
+Œredni wspó³czynnik b³êdu [%]:  ; 10.7698
+Optymalny koszt:  ; 1286
+
+Nazwa pliku: Data/ftv44.atsp.txt
+Powtórzenia algorytmu: 10
+Optymalny koszt: 1613
+Otrzymany koszt: ;Wspó³czynnik b³êdu[j]: ;Wspó³czynnik b³êdu[%]: ;Czas wykonywania[ms] ;Rozwi¹zania dla alpha = 1
+Rozwi¹zania dla beta = 5
+1834 ; 221 ; 13.7012 ; 947.9 ; 
+1844 ; 231 ; 14.3211 ; 953.222 ; 
+1902 ; 289 ; 17.9169 ; 946.88 ; 
+1763 ; 150 ; 9.29944 ; 970.195 ; 
+1816 ; 203 ; 12.5852 ; 948.55 ; 
+1882 ; 269 ; 16.677 ; 964.946 ; 
+1795 ; 182 ; 11.2833 ; 974.031 ; 
+1732 ; 119 ; 7.37756 ; 960.382 ; 
+1866 ; 253 ; 15.6851 ; 940.924 ; 
+1923 ; 310 ; 19.2188 ; 966.352 ; 
+Œredni czas wykonywania algorytmu [ms]:  ; 860.703
+Œredni wspó³czynnik b³êdu [j]:  ; 222.7
+Œredni wspó³czynnik b³êdu [%]:  ; 13.8066
+Optymalny koszt:  ; 1613
+
+Nazwa pliku: Data/ft53.atsp.txt
+Powtórzenia algorytmu: 10
+Optymalny koszt: 6905
+Otrzymany koszt: ;Wspó³czynnik b³êdu[j]: ;Wspó³czynnik b³êdu[%]: ;Czas wykonywania[ms] ;Rozwi¹zania dla alpha = 1
+Rozwi¹zania dla beta = 5
+8479 ; 1574 ; 22.7951 ; 1651.86 ; 
+8883 ; 1978 ; 28.6459 ; 1656.25 ; 
+8687 ; 1782 ; 25.8074 ; 1674.54 ; 
+8837 ; 1932 ; 27.9797 ; 1661.18 ; 
+8893 ; 1988 ; 28.7907 ; 1711.26 ; 
+8742 ; 1837 ; 26.6039 ; 1674.47 ; 
+8535 ; 1630 ; 23.6061 ; 1713.62 ; 
+8634 ; 1729 ; 25.0398 ; 1703.69 ; 
+8682 ; 1777 ; 25.735 ; 1722.77 ; 
+8836 ; 1931 ; 27.9652 ; 1687.99 ; 
+Œredni czas wykonywania algorytmu [ms]:  ; 1516.97
+Œredni wspó³czynnik b³êdu [j]:  ; 1815.8
+Œredni wspó³czynnik b³êdu [%]:  ; 26.2969
+Optymalny koszt:  ; 6905
+
+Nazwa pliku: Data/ftv70.atsp.txt
+Powtórzenia algorytmu: 10
+Optymalny koszt: 1950
+Otrzymany koszt: ;Wspó³czynnik b³êdu[j]: ;Wspó³czynnik b³êdu[%]: ;Czas wykonywania[ms] ;Rozwi¹zania dla alpha = 1
+Rozwi¹zania dla beta = 5
+2346 ; 396 ; 20.3077 ; 3692.86 ; 
+2344 ; 394 ; 20.2051 ; 3694.92 ; 
+2327 ; 377 ; 19.3333 ; 3664.27 ; 
+2302 ; 352 ; 18.0513 ; 3705.99 ; 
+2294 ; 344 ; 17.641 ; 3702.85 ; 
+2363 ; 413 ; 21.1795 ; 3745.24 ; 
+2256 ; 306 ; 15.6923 ; 3744.9 ; 
+2359 ; 409 ; 20.9744 ; 3749.16 ; 
+2402 ; 452 ; 23.1795 ; 3752.06 ; 
+2264 ; 314 ; 16.1026 ; 3772.12 ; 
+Œredni czas wykonywania algorytmu [ms]:  ; 3345.23
+Œredni wspó³czynnik b³êdu [j]:  ; 375.7
+Œredni wspó³czynnik b³êdu [%]:  ; 19.2667
+Optymalny koszt:  ; 1950
+
+Nazwa pliku: Data/ch150.tsp.txt
+Powtórzenia algorytmu: 10
+Optymalny koszt: 6528
+Otrzymany koszt: ;Wspó³czynnik b³êdu[j]: ;Wspó³czynnik b³êdu[%]: ;Czas wykonywania[ms] ;Rozwi¹zania dla alpha = 1
+Rozwi¹zania dla beta = 5
+7869 ; 1341 ; 20.5423 ; 36433.5 ; 
+7819 ; 1291 ; 19.7763 ; 36545.1 ; 
+7841 ; 1313 ; 20.1134 ; 36794.4 ; 
+7790 ; 1262 ; 19.3321 ; 36763.3 ; 
+7689 ; 1161 ; 17.7849 ; 37091.1 ; 
+7881 ; 1353 ; 20.7261 ; 37062.7 ; 
+7784 ; 1256 ; 19.2402 ; 37027.9 ; 
+7969 ; 1441 ; 22.0741 ; 37036.1 ; 
+7798 ; 1270 ; 19.4547 ; 37101.2 ; 
+7739 ; 1211 ; 18.5509 ; 37110.9 ; 
+Œredni czas wykonywania algorytmu [ms]:  ; 33185.5
+Œredni wspó³czynnik b³êdu [j]:  ; 1289.9
+Œredni wspó³czynnik b³êdu [%]:  ; 19.7595
+Optymalny koszt:  ; 6528
+
+Nazwa pliku: Data/ftv170.atsp.txt
+Powtórzenia algorytmu: 10
+Optymalny koszt: 2755
+Otrzymany koszt: ;Wspó³czynnik b³êdu[j]: ;Wspó³czynnik b³êdu[%]: ;Czas wykonywania[ms] ;Rozwi¹zania dla alpha = 1
+Rozwi¹zania dla beta = 5
+3649 ; 894 ; 32.4501 ; 50768 ; 
+3694 ; 939 ; 34.0835 ; 54782.1 ; 
+3671 ; 916 ; 33.2486 ; 54268.7 ; 
+3668 ; 913 ; 33.1397 ; 53478.1 ; 
+3632 ; 877 ; 31.833 ; 75327.7 ; 
+3436 ; 681 ; 24.7187 ; 82052.5 ; 
+3601 ; 846 ; 30.7078 ; 59420.2 ; 
+3673 ; 918 ; 33.3212 ; 56984.5 ; 
+3616 ; 861 ; 31.2523 ; 57061.4 ; 
+3499 ; 744 ; 27.0054 ; 57114.4 ; 
+Œredni czas wykonywania algorytmu [ms]:  ; 54414.3
+Œredni wspó³czynnik b³êdu [j]:  ; 858.9
+Œredni wspó³czynnik b³êdu [%]:  ; 31.176
+Optymalny koszt:  ; 2755
+
+Nazwa pliku: Data/gr202.tsp.txt
+Powtórzenia algorytmu: 10
+Optymalny koszt: 40160
+Otrzymany koszt: ;Wspó³czynnik b³êdu[j]: ;Wspó³czynnik b³êdu[%]: ;Czas wykonywania[ms] ;Rozwi¹zania dla alpha = 1
+Rozwi¹zania dla beta = 5
+49922 ; 9762 ; 24.3078 ; 103249 ; 
+50178 ; 10018 ; 24.9452 ; 106995 ; 
+50523 ; 10363 ; 25.8043 ; 114868 ; 
+50460 ; 10300 ; 25.6474 ; 140071 ; 
+50649 ; 10489 ; 26.118 ; 157089 ; 
+50563 ; 10403 ; 25.9039 ; 147889 ; 
+51020 ; 10860 ; 27.0418 ; 134589 ; 
+49462 ; 9302 ; 23.1623 ; 144853 ; 
+50291 ; 10131 ; 25.2266 ; 145708 ; 
+51270 ; 11110 ; 27.6643 ; 145133 ; 
+Œredni czas wykonywania algorytmu [ms]:  ; 119531
+Œredni wspó³czynnik b³êdu [j]:  ; 10273.8
+Œredni wspó³czynnik b³êdu [%]:  ; 25.5822
+Optymalny koszt:  ; 40160
+
+Nazwa pliku: Data/rbg323.atsp.txt
+Powtórzenia algorytmu: 10
+Optymalny koszt: 1326
+Otrzymany koszt: ;Wspó³czynnik b³êdu[j]: ;Wspó³czynnik b³êdu[%]: ;Czas wykonywania[ms] ;Rozwi¹zania dla alpha = 1
+Rozwi¹zania dla beta = 5

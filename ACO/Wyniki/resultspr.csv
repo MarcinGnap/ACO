@@ -1,0 +1,60 @@
+Nazwa pliku: Data/pr107.tsp.txt
+Powtórzenia algorytmu: 10
+Optymalny koszt: 44303
+Otrzymany koszt: ;Wspó³czynnik b³êdu[j]: ;Wspó³czynnik b³êdu[%]: ;Czas wykonywania[ms] ;Rozwi¹zania dla alpha = 1
+Rozwi¹zania dla beta = 5
+47164 ; 2861 ; 6.4578 ; 10159.5 ; 
+47319 ; 3016 ; 6.80767 ; 9825.89 ; 
+47153 ; 2850 ; 6.43297 ; 9841.41 ; 
+47400 ; 3097 ; 6.9905 ; 10195.4 ; 
+46829 ; 2526 ; 5.70165 ; 9895.7 ; 
+47050 ; 2747 ; 6.20048 ; 10578.4 ; 
+47385 ; 3082 ; 6.95664 ; 10182 ; 
+47159 ; 2856 ; 6.44652 ; 9835.23 ; 
+46921 ; 2618 ; 5.90931 ; 9798.96 ; 
+47292 ; 2989 ; 6.74672 ; 9726.7 ; 
+Œredni czas wykonywania algorytmu [ms]:  ; 9031.25
+Œredni wspó³czynnik b³êdu [j]:  ; 2864.2
+Œredni wspó³czynnik b³êdu [%]:  ; 6.46502
+Optymalny koszt:  ; 44303
+
+Nazwa pliku: Data/pr226.tsp.txt
+Powtórzenia algorytmu: 10
+Optymalny koszt: 80369
+Otrzymany koszt: ;Wspó³czynnik b³êdu[j]: ;Wspó³czynnik b³êdu[%]: ;Czas wykonywania[ms] ;Rozwi¹zania dla alpha = 1
+Rozwi¹zania dla beta = 5
+85285 ; 4916 ; 6.11679 ; 84051.2 ; 
+86388 ; 6019 ; 7.48921 ; 80729.9 ; 
+87791 ; 7422 ; 9.2349 ; 81916.4 ; 
+83790 ; 3421 ; 4.25662 ; 82239.1 ; 
+86081 ; 5712 ; 7.10722 ; 82590.8 ; 
+84353 ; 3984 ; 4.95714 ; 81658.4 ; 
+85979 ; 5610 ; 6.9803 ; 83025.7 ; 
+86668 ; 6299 ; 7.8376 ; 80680.5 ; 
+85147 ; 4778 ; 5.94508 ; 80513 ; 
+85819 ; 5450 ; 6.78122 ; 80433.6 ; 
+Œredni czas wykonywania algorytmu [ms]:  ; 73740.5
+Œredni wspó³czynnik b³êdu [j]:  ; 5361.1
+Œredni wspó³czynnik b³êdu [%]:  ; 6.67061
+Optymalny koszt:  ; 80369
+
+Nazwa pliku: Data/pr299.tsp.txt
+Powtórzenia algorytmu: 10
+Optymalny koszt: 48191
+Otrzymany koszt: ;Wspó³czynnik b³êdu[j]: ;Wspó³czynnik b³êdu[%]: ;Czas wykonywania[ms] ;Rozwi¹zania dla alpha = 1
+Rozwi¹zania dla beta = 5
+54164 ; 5973 ; 12.3944 ; 189425 ; 
+55064 ; 6873 ; 14.262 ; 190067 ; 
+54309 ; 6118 ; 12.6953 ; 192849 ; 
+55821 ; 7630 ; 15.8328 ; 193626 ; 
+56545 ; 8354 ; 17.3352 ; 197516 ; 
+56080 ; 7889 ; 16.3703 ; 201025 ; 
+56023 ; 7832 ; 16.252 ; 192081 ; 
+54822 ; 6631 ; 13.7598 ; 193531 ; 
+55812 ; 7621 ; 15.8142 ; 196628 ; 
+54947 ; 6756 ; 14.0192 ; 197866 ; 
+Œredni czas wykonywania algorytmu [ms]:  ; 174675
+Œredni wspó³czynnik b³êdu [j]:  ; 7167.7
+Œredni wspó³czynnik b³êdu [%]:  ; 14.8735
+Optymalny koszt:  ; 48191
+

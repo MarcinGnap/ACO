@@ -1,0 +1,25 @@
+Nazwa pliku: Data/pcb442.tsp.txt
+Powtórzenia algorytmu: 10
+Optymalny koszt: 50778
+Otrzymany koszt: ;Wspó³czynnik b³êdu[j]: ;Wspó³czynnik b³êdu[%]: ;Czas wykonywania[ms] ;Rozwi¹zania dla alpha = 1
+Rozwi¹zania dla beta = 5
+67414 ; 16636 ; 32.7622 ; 939765 ; 
+68477 ; 17699 ; 34.8556 ; 956435 ; 
+67617 ; 16839 ; 33.162 ; 957095 ; 
+68014 ; 17236 ; 33.9438 ; 958803 ; 
+67632 ; 16854 ; 33.1915 ; 953391 ; 
+67315 ; 16537 ; 32.5673 ; 971100 ; 
+68268 ; 17490 ; 34.4441 ; 967286 ; 
+66449 ; 15671 ; 30.8618 ; 962438 ; 
+68013 ; 17235 ; 33.9419 ; 962946 ; 
+67478 ; 16700 ; 32.8883 ; 954491 ; 
+Œredni czas wykonywania algorytmu [ms]:  ; 862926
+Œredni wspó³czynnik b³êdu [j]:  ; 16889.7
+Œredni wspó³czynnik b³êdu [%]:  ; 33.2618
+Optymalny koszt:  ; 50778
+
+Nazwa pliku: Data/gr666.tsp.txt
+Powtórzenia algorytmu: 10
+Optymalny koszt: 294358
+Otrzymany koszt: ;Wspó³czynnik b³êdu[j]: ;Wspó³czynnik b³êdu[%]: ;Czas wykonywania[ms] ;Rozwi¹zania dla alpha = 1
+Rozwi¹zania dla beta = 5

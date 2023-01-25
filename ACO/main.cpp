@@ -59,8 +59,8 @@ int main() {
 		vector<int> path;
 		int cost;
 
-		vector<double> alfa = { 1 };
-		vector<double> beta = { 5 };
+		vector<double> alfa = { reader.alpha };
+		vector<double> beta = { reader.beta };
 
 		path.resize(myGraph->getNumbOfVerts() + 1);
 
@@ -91,7 +91,7 @@ int main() {
 					TSP* test = new ACO();
 					test->load(myGraph);
 
-					exeTime = test->menu(alfa[al], beta[be]);
+					exeTime = test->menu(alfa[al], beta[be], reader.qval, reader.aco);
 
 					error = abs(reader.iOCost[pliki] - test->getBest());
 					errorRate = (error / reader.iOCost[pliki]) * 100;
